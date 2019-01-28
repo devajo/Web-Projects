@@ -1,6 +1,6 @@
 # MARKDOWN COMMANDS
 
-Some useful commands used in markdown.For further reference [Markdown guide](https://www.markdownguide.org/basic-syntax)
+Some useful commands used in markdown.For further reference [Markdown guide](https://www.markdownguide.org/basic-syntax).
 
 |Command |Description|
 |--------|-----------|
