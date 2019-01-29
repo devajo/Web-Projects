@@ -1,0 +1,5 @@
+body{background: grey;}
+h1{text-align:center;}
+.day{width:120px;margin-left:410px;display:inline-block;}
+.start-time{margin-right:10px;}
+.end-time{margin-left:10px;margin-right:10px;}
