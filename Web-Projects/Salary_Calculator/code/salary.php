@@ -6,14 +6,14 @@
 </head>
 <body>
 <h1>Salary Calculator Form</h1>
-
-
 <form action="post" id="form">
-	<br>
-	<br>
-	
+<br>
+<div class="head-row">
+    <label class="lday">DAY</label><label class="lstime">START-TIME</label><label class="ph">PUBLIC HOLIDAY</label><label class="letime">END-TIME</label>
+</div>
+<br>
+<br>
 <label class="day">MONDAY</label>		
-<label class="start-time">Start-Time</label>				
   <select class="day-hrs">
   	<option value="--">--</option>
   	<option value="00">00</option>
@@ -41,17 +41,17 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select>
+<select class="day-min">
 	<option value="--">--</option>
 	<option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
-<label class="end-time">End-Time</label>
-<select id="hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+<input type="checkbox" class="phbox">
+<select class="day-hrs">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -76,20 +76,19 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select id="min">
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
 <br>
 <br>
-<label class="day">TUESDAY</label>		
-<label class="start-time">Start-Time</label>				
+<label class="day">TUESDAY</label>       
   <select class="day-hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -114,17 +113,17 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select>
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
-<label class="end-time">End-Time</label>
-<select id="hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+<input type="checkbox" class="phbox">
+<select class="day-hrs">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -149,20 +148,19 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select id="min">
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
 <br>
 <br>
-<label class="day">WEDNESDAY</label>		
-<label class="start-time">Start-Time</label>				
+<label class="day">WEDNESDAY</label>       
   <select class="day-hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -187,17 +185,17 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select>
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
-<label class="end-time">End-Time</label>
-<select id="hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+<input type="checkbox" class="phbox">
+<select class="day-hrs">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -222,20 +220,19 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select id="min">
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
 <br>
 <br>
-<label class="day">THURSDAY</label>		
-<label class="start-time">Start-Time</label>				
+<label class="day">THURSDAY</label>       
   <select class="day-hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -260,17 +257,17 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select>
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
-<label class="end-time">End-Time</label>
-<select id="hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+<input type="checkbox" class="phbox">
+<select class="day-hrs">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -295,20 +292,19 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select id="min">
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
 <br>
 <br>
-<label class="day">FRIDAY</label>		
-<label class="start-time">Start-Time</label>				
+<label class="day">FRIDAY</label>       
   <select class="day-hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -333,17 +329,17 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select>
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
-<label class="end-time">End-Time</label>
-<select id="hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+<input type="checkbox" class="phbox">
+<select class="day-hrs">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -368,20 +364,19 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select id="min">
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
 <br>
 <br>
-<label class="day">SATURDAY</label>		
-<label class="start-time">Start-Time</label>				
+<label class="day">SATURDAY</label>       
   <select class="day-hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -406,17 +401,17 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select>
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
-<label class="end-time">End-Time</label>
-<select id="hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+<input type="checkbox" class="phbox">
+<select class="day-hrs">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -441,20 +436,19 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select id="min">
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
 <br>
 <br>
-<label class="day">SUNDAY</label>		
-<label class="start-time">Start-Time</label>				
+<label class="day">SUNDAY</label>       
   <select class="day-hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -479,17 +473,17 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select>
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
-<label class="end-time">End-Time</label>
-<select id="hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
+<input type="checkbox" class="phbox">
+<select class="day-hrs">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="01">01</option>
     <option value="02">02</option>
     <option value="03">03</option>
@@ -514,12 +508,15 @@
     <option value="22">22</option>
     <option value="23">23</option>
  </select>
-<select id="min">
-	<option value="--">--</option>
-	<option value="00">00</option>
+<select class="day-min">
+    <option value="--">--</option>
+    <option value="00">00</option>
     <option value="15">15</option>
     <option value="30">30</option>
     <option value="45">45</option>
 </select>
 <br>
 <br>
+<br>
+<button class="button">Calculate Wages</button>
+</form>
