@@ -6,517 +6,77 @@
 </head>
 <body>
 <h1>Salary Calculator Form</h1>
-<form action="post" id="form">
+<form method="post" action="calculated_salary.php">
 <br>
+<!-- we give a width to heading row,furture we give the invidual class name to all label.as the label are laid in line the width given maitains the distance between the label. 
+-->
 <div class="head-row">
-    <label class="lday">DAY</label><label class="lstime">START-TIME</label><label class="ph">PUBLIC HOLIDAY</label><label class="letime">END-TIME</label>
+	<label class="lday">DAY</label><label class="lstime">START-TIME</label><label class="ph">PUBLIC HOLIDAY</label><label class="letime">END-TIME</label>
 </div>
 <br>
 <br>
-<label class="day">MONDAY</label>		
-  <select class="day-hrs">
-  	<option value="--">--</option>
-  	<option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-	<option value="--">--</option>
-	<option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<input type="checkbox" class="phbox">
-<select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<br>
-<br>
-<label class="day">TUESDAY</label>       
-  <select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<input type="checkbox" class="phbox">
-<select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<br>
-<br>
-<label class="day">WEDNESDAY</label>       
-  <select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<input type="checkbox" class="phbox">
-<select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<br>
-<br>
-<label class="day">THURSDAY</label>       
-  <select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<input type="checkbox" class="phbox">
-<select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<br>
-<br>
-<label class="day">FRIDAY</label>       
-  <select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<input type="checkbox" class="phbox">
-<select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<br>
-<br>
-<label class="day">SATURDAY</label>       
-  <select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<input type="checkbox" class="phbox">
-<select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<br>
-<br>
-<label class="day">SUNDAY</label>       
-  <select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<input type="checkbox" class="phbox">
-<select class="day-hrs">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="01">01</option>
-    <option value="02">02</option>
-    <option value="03">03</option>
-    <option value="04">04</option>
-    <option value="05">05</option>
-    <option value="06">06</option>
-    <option value="07">07</option>
-    <option value="08">08</option>
-    <option value="09">09</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-    <option value="16">16</option>
-    <option value="17">17</option>
-    <option value="18">18</option>
-    <option value="19">19</option>
-    <option value="20">20</option>
-    <option value="21">21</option>
-    <option value="22">22</option>
-    <option value="23">23</option>
- </select>
-<select class="day-min">
-    <option value="--">--</option>
-    <option value="00">00</option>
-    <option value="15">15</option>
-    <option value="30">30</option>
-    <option value="45">45</option>
-</select>
-<br>
+<?php
+$days=array("monday","tuesday","wednesday","thursday","friday","saturday","sunday");
+
+for ($a=0;$a<7;$a++)
+{
+echo"<label class=\"day\">".strtoupper($days[$a])."</label>";
+echo "<select class=\"day-hrs\" "."name=\"".substr($days[$a],0,3)."-s-hrs"."\" >";
+echo "<option value=\"--\">--</option>";
+for($b=0;$b<24;$b++)
+{
+echo "<option value=\"".$b."\">".$b."</option>";	
+}	
+
+echo"</select>";
+
+echo "<select class=\"day-min\" "."name=\"".substr($days[$a],0,3)."-s-min"."\" >";
+echo "<option value=\"--\">--</option>";
+for($c=0;$c<4;$c++)
+{
+echo "<option value=\"".($c*15)."\">".($c*15)."</option>";	
+}
+
+
+
+
+echo"</select>";
+
+echo "<input type=\"checkbox\" class=\"phbox\""."name=\"".substr($days[$a],0,3)."-ph"."\">";  
+
+echo "<select class=\"day-hrs\" "."name=\"".substr($days[$a],0,3)."-e-hrs"."\" >";
+echo "<option value=\"--\">--</option>";
+for($b=0;$b<24;$b++)
+{
+echo "<option value=\"".$b."\">".$b."</option>";	
+}
+
+echo"</select>";
+
+echo "<select class=\"day-min\" "."name=\"".substr($days[$a],0,3)."-e-min"."\" >";
+echo "<option value=\"--\">--</option>";
+for($c=0;$c<4;$c++)
+{
+echo "<option value=\"".($c*15)."\">".($c*15)."</option>";	
+}
+
+echo"</select>";
+echo"<br>";
+echo"<br>";
+}
+?>
+
+
 <br>
 <br>
 <button class="button">Calculate Wages</button>
+	
 </form>
+
+</body>
+</html>
+
+
+
+
+
